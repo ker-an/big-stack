@@ -28,7 +28,7 @@ resource "random_integer" "instances" {
 }
 
 resource "terraform_data" "results" {
-  for_each = toset(range(random_integer.instances.result))
+  for_each = toset([for i in range(random_integer.instances.result): tostring(i)])
   input = var.prefix
 }
 
