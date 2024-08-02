@@ -28,7 +28,7 @@ resource "random_integer" "instances" {
 }
 
 resource "terraform_data" "results" {
-  count = random_integer.instances.result
+  for_each = toset(range(random_integer.instances.result))
   input = var.prefix
 }
 
