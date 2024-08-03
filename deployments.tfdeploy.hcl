@@ -22,14 +22,14 @@ deployment "us-west-1" {
 deployment "us-west-2" {
   inputs = {
     prefix = "us-west-2"
-    floor  = 3
+    floor  = 4
   }
 }
 
 deployment "af-south-1" {
   inputs = {
     prefix = "af-south-1"
-    floor  = 6
+    floor  = 7
   }
 }
 
@@ -43,7 +43,7 @@ deployment "ap-east-1" {
 deployment "ap-south-1" {
   inputs = {
     prefix = "ap-south-1"
-    floor  = 10
+    floor  = 11
   }
 }
 
@@ -99,7 +99,7 @@ deployment "eu-west-2" {
 deployment "eu-south-1" {
   inputs = {
     prefix = "eu-south-1"
-    floor  = 8
+    floor  = 9
   }
 }
 
@@ -113,27 +113,27 @@ deployment "eu-south-2" {
 deployment "eu-north-1" {
   inputs = {
     prefix = "eu-north-1"
-    floor  = 14
+    floor  = 12
   }
 }
 
 deployment "il-central-1" {
   inputs = {
     prefix = "il-central-1"
-    floor  = 4
+    floor  = 5
   }
 }
 
 deployment "me-south-1" {
   inputs = {
     prefix = "me-south-1"
-    floor  = 6
+    floor  = 4
   }
 }
 
 deployment "me-central-1" {
   inputs = {
     prefix = "me-central-1"
-    floor  = 2
+    floor  = 4
   }
 }
