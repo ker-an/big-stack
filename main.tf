@@ -29,7 +29,7 @@ resource "random_integer" "instances" {
 
 resource "terraform_data" "results" {
   for_each = toset([for i in range(random_integer.instances.result): tostring(i)])
-  input = var.prefix
+  input = "new-${var.prefix}"
 }
 
 resource "random_pet" "pets" {
