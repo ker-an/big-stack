@@ -29,7 +29,7 @@ deployment "us-west-2" {
 deployment "af-south-1" {
   inputs = {
     prefix = "af-south-1"
-    floor  = 7
+    floor  = 6
   }
 }
 
@@ -43,21 +43,21 @@ deployment "ap-east-1" {
 deployment "ap-south-1" {
   inputs = {
     prefix = "ap-south-1"
-    floor  = 11
+    floor  = 10
   }
 }
 
 deployment "ap-southeast-1" {
   inputs = {
     prefix = "ap-southeast-1"
-    floor  = 6
+    floor  = 5
   }
 }
 
 deployment "ap-northeast-1" {
   inputs = {
     prefix = "ap-northeast-1"
-    floor  = 2
+    floor  = 1
   }
 }
 
