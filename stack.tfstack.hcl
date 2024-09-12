@@ -21,6 +21,7 @@ provider "random" "main" {}
 provider "terraform" "main" {}
 
 component "stack" {
+  count  = 20
   source = "./"
   inputs = {
     prefix = var.prefix
