@@ -21,7 +21,8 @@ provider "random" "main" {}
 provider "terraform" "main" {}
 
 component "stack" {
-  count  = 20
+  for_each = toset([for i in range(20): tostring(i)])
+
   source = "./"
   inputs = {
     prefix = var.prefix
