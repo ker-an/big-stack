@@ -29,7 +29,7 @@ deployment "us-west-2" {
 deployment "af-south-1" {
   inputs = {
     prefix = "af-south-1"
-    floor  = 8
+    floor  = 7
   }
 }
 
