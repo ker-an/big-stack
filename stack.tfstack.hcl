@@ -31,3 +31,15 @@ component "stack" {
     terraform = provider.terraform.main
   }
 }
+
+component "application_with_a_very_very_very_very_very_very_very_long_name" {
+  source = "./"
+  inputs = {
+    prefix = var.prefix
+    floor  = var.floor
+  }
+  providers = {
+    random    = provider.random.main
+    terraform = provider.terraform.main
+  }
+}
