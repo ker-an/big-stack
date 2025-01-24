@@ -21,7 +21,7 @@ variable "floor" {
 
 resource "random_integer" "instances" {
   min = var.floor
-  max = var.floor * 3
+  max = var.floor * 2
   keepers = {
     floor = var.floor
   }
