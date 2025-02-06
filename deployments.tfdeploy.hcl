@@ -8,7 +8,7 @@ deployment "us-east-2" {
 deployment "us-east-1" {
   inputs = {
     prefix = "us-east-1"
-    floor  = 7
+    floor  = 6
   }
 }
 
